@@ -1,0 +1,151 @@
+:root {
+    --main-font :"Space Mono", monospace;
+}
+.d-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+.login .container {
+    background-color: #412042;
+}
+
+.sign .container {
+    background-color: #9ACBC1;
+}
+
+.login .row > .col-md-7 {
+    background-color: #ffb1dc;
+}
+.sign  .row > .col-md-7 {
+    background-color: #45555F;
+    color: #ffffff;
+    
+}
+
+label{
+    position: relative;
+}
+
+label:after {
+    content: '*';
+    font-size: 12px;
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    color: #F90000;
+
+}
+
+.login , 
+.sign {
+    min-height: calc(100vh - 3.5rem);
+}
+
+.login{
+    background-image: url(../images/Colour-Blue.png);
+}
+.sign{
+    background-image: url(../images/Colour-Orange-min.jpg);
+}
+.login p a {
+    color: #454AE0;
+    position: relative;
+}
+
+.login p a:hover:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #454AE0;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+}
+
+.login .btn-primary {
+    background-color: #333;
+    border-color: #333;
+}
+
+.login .btn-primary:hover {
+    background-color: #454AE0;
+    border-color: #454AE0;
+}
+
+
+.sign p a {
+    color: #F59219;
+    position: relative;
+}
+
+.sign p a:hover:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #F59219;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+}
+
+.sign .btn-primary {
+    background-color: #333;
+    border-color: #333;
+}
+.sign .btn-primary:hover {
+    background-color: #F59219;
+    border-color: #F59219;
+}
+
+
+.welcome-title {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-image: url(../images/Colour-Blue.png);
+}
+
+
+
+
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.4) !important;
+}
+
+
+footer {
+    background-color: #333;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.866);
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer p a{
+    color: rgba(255, 255, 255, 0.842);
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+}
+
+footer p a:hover {
+    color: rgb(255, 255, 255);
+}
+
+footer p a:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F97640;
+    height: 1px;
+}
